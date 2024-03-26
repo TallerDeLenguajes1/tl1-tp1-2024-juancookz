@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/juancruzavila/tp1/tl1-tp1-2024-juancookz",
+      "program": "/Users/juancruzavila/tp1/tl1-tp1-2024-juancookz/build/Debug/outDebug"
+    }
+  ]
+}
