@@ -1,13 +1,14 @@
 #include <stdio.h>
-int cuadradoNum(int num);
+void cuadradoNum(int num, int *res);
 int main()
 {
-    int numero;
+    int numero, res;
     printf("Ingrese un numero:");
     scanf("%d",&numero);
-    printf("\nEl numero al cuadrado es %d", cuadradoNum(numero));
+    cuadradoNum(numero, &res);
+    printf("El cuadrado del numero es: %d", res);
     return 0;
 }
-int cuadradoNum(int num){
-    return num*num;
+void cuadradoNum(int num, int *res){
+    *res = num*num;
 }
