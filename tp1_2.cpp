@@ -1,16 +1,21 @@
 #include <stdio.h>
-void cuadradoNum(int num, int *res);
+void invertir(int *a, int *b);
 int main()
 {
-    int numero, res;
-    printf("Ingrese un numero:");
-    scanf("%d",&numero);
-    printf("\nVariable recibida\nValor: %d\nDireccion: %p\n", numero, &numero);
-    cuadradoNum(numero, &res);
-    printf("\nVariable recibida\nValor: %d\nDireccion: %p\n", res, &res);
-    printf("El cuadrado del numero es: %d", res);
+    int a, b;
+    printf("\nIngrese a:");
+    scanf("%d", &a);
+    printf("\nIngrese b:");
+    scanf("%d", &b);
+    invertir(&a, &b);
+    printf("\na es: %d", a);
+    printf("\nb es: %d", b);
     return 0;
 }
-void cuadradoNum(int num, int *res){
-    *res = num*num;
+void invertir(int *a, int *b)
+{
+    int c;
+    c = *a;
+    *a = *b;
+    *b = c;
 }
